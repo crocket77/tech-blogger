@@ -12,6 +12,6 @@ To view this program go to the heroku site listed to install clone my repo and d
 
 ## Usage
 
-To allow developers to connect and post articles about their favorite tech or complain about the tech they dont like.
+To allow developers to connect and post articles about their favorite tech or complain about the tech they don't like.
 
 [Link to deployed Website]()
