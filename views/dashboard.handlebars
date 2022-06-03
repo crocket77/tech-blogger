@@ -1,11 +1,9 @@
 <section>
   {{!-- how do we get profile image here? --}}
   <center>
-    <div class="profile-img">
-      <img class="user-img" src="images/{{user.filename}}" alt="{{user.username}} profile image">
-    </div>
+
   </center>
-  <h1 class="user-stuff">{{user.persona}} would you like to add a post and rant?</h1>
+  <h1 class="user-stuff">{{user.username}} would you like to add a post and contents?</h1>
   
   <h2 class="dashboard-header">Create New Post</h2>
 
@@ -15,8 +13,8 @@
       <input type="text" id="post-title" name="post-title" />
     </div>
     <div>
-      <label for="post-text">Rant</label>
-      <input type="text" name="post-text" />
+      <label for="post-text">Contents</label>
+      <input type="textarea" name="post-text" />
     </div>
     <button type="submit" class="btn">Create</button>
   </form>
@@ -30,7 +28,7 @@
     {{#each posts as |post|}}
     <li>
       {{> dashboard-post post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a>
+      <a href="/dashboard/edit/{{post.id}}" class="edit_link">Edit Post</a>
     </li>
     {{/each}}
   </ol>

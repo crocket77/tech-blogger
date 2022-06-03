@@ -4,34 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aniverse</title>
+  <title>Tech Blogger</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1850848335773870"
      crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="wrapper">
+  
+
   <header>
     <h1>
-      <a href="/">Tech Blogger</a>
+      <a href="/" class="header_link">Tech Blogger</a>
     </h1>
-<nav>
-  {{#if loggedIn}}
-  <a href="/dashboard">Profile Page</a>
-  <button  id="logout" class="btn-no-style logout">Logout</button>
-  {{else}}
-  <a  href="/login">login</a>
-  {{/if}}
-</nav>
+    <nav>
+      {{#if loggedIn}}
+      <a href="/dashboard" class="header_link">Profile Page</a>
+      <button  id="logout" class="btn-no-style logout header_link">Logout</button>
+      {{else}}
+      <a  href="/login" class="header_link">login</a>
+      {{/if}}
+    </nav>
   </header>
+
     <main>
       {{{ body }}}
     </main>
+
+    
     <footer>
       &copy; Tech blogger 
     </footer>
-  </div>
+  
 
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
