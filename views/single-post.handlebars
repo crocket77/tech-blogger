@@ -1,13 +1,14 @@
 <article class="post">
   <div class="title">
-    <a href="{{post.post_url}}" target="_blank">{{post.title}}</a>
-    <span>({{post.post_url}})</span>
+    <h1 style="color:black">{{post.title}}</h1>
+    
   </div>
-  <div class="meta">
+  <div class="bottom-post" style="color:black">
     By {{post.user.username}} on
     {{post.created_at}}
     |
-    <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" comments.length}}</a>
+    <br></br>
+    <a href="#comment_section">{{post.comments.length}} {{format_plural "comment" comments.length}}</a>
   </div>
 </article>
 
@@ -23,7 +24,7 @@
 </form>
 {{/if}}
 
-<div class="comments">
+<div id="comment_section" class="comments">
   {{> comments post.comments}}
 </div>
 

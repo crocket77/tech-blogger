@@ -9,6 +9,7 @@ router.get('/', (req, res) => {
         // 'post_url',
         'title',
         'created_at',
+        'post_text'
       ],
       include: [
         {
@@ -70,6 +71,7 @@ router.get('/', (req, res) => {
         // 'post_url',
         'title',
         'created_at',
+        'post_text'
       ],
       include: [
         {

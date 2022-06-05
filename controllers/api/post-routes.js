@@ -6,7 +6,7 @@ const sequelize = require('../../config/connection');
 // get all Posts
 router.get('/', (req, res) => {
   Post.findAll({
-    attributes: ['id', 'title', 'created_at','user_id'],
+    attributes: ['id', 'title', 'created_at','user_id','post_text'],
     order: [['created_at', 'DESC',]],
     include: [
       {
@@ -36,7 +36,7 @@ router.get('/:id',withAuth, (req, res) => {
     where: {
       id: req.params.id
     },
-    attributes: ['id', 'title', 'created_at','post_text'],
+    attributes: ['id', 'title', 'created_at','post_text','user_id'],
     include: [
       {
         model: Comment,

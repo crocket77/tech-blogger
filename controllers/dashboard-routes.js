@@ -14,13 +14,12 @@ router.get('/', withAuth, (req, res) => {
       'username',
       'email',
       'password',
-      'persona',
-      'filename'
+
     ]
   }).then(dbUserData => {
     console.log("db user data from the dashboard route",dbUserData)
     user = dbUserData.dataValues;
-    console.log("this is the user data:",user);
+    
   })
   .catch(err => {
     console.log(err);
@@ -44,18 +43,18 @@ router.get('/', withAuth, (req, res) => {
         attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
         include: {
           model: User,
-          attributes: ['username','persona','filename']
+          attributes: ['username']
         }
       },
       {
         model: User,
-        attributes: ['username','persona','filename']
+        attributes: ['username']
       }
     ]
   })
     .then(dbPostData => {
       const posts = dbPostData.map(post => post.get({ plain: true }));
-
+      
       res.render('dashboard', { user, posts, loggedIn: true });
     })
     .catch(err => {
@@ -79,12 +78,12 @@ router.get('/edit/:id', withAuth, (req, res) => {
         attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
         include: {
           model: User,
-          attributes: ['username','persona','filename']
+          attributes: ['username']
         }
       },
       {
         model: User,
-        attributes: ['username','persona','filename']
+        attributes: ['username']
       }
     ]
   })
