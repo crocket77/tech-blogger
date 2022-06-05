@@ -1,44 +1,23 @@
-# Aniverse ![bad math](https://img.shields.io/badge/License-MIT-blue)
+# Tech Blogger
 
 ## Description
-Aniverse is a social media platform in which you can be your favorite anime character and share posts or chat with others as their character. All you need to do is create any username and enter your email and that's it! No other personal information is required. Download and enjoy the freedom of the Aniverse!!!
+Tech blogging app to blog about your favorite tech!
 
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
 - [Credits](#credits)
-- [Contributions](#contributions)
-- [Testing](#testing)
-- [Questions](#questions)
+
 
 ## Installation
 Clone the code from our Github repo or download the zip files
 
 ## Usage
-![screenshot](/public/images/screenshot.PNG "screenshot") 
 Open up your code editor and make sure you are in the root directory. Make sure you have  source schema.sql
-In your terminal type NPM i, this will install all of the software needed in the package.json file. Once installed type NPM start, this will run the server Aniverse is on. Head over to your web browser and type in localhost:3001 from there sign up and log in. Once on the main page you'll be able to make posts and comment on other users posts. 
-
-## License
-
-![bad math](https://img.shields.io/badge/License-MIT-blue)
-
-This project is using MIT. For more information on this or other licenses please reference: [https://choosealicense.com](https;//choosealicense.com).
-
-MIT
+In your terminal type NPM i, this will install all of the software needed in the package.json file. Once installed type NPM start, this will run the server. Head over to your web browser and type in localhost:3001 from there sign up and log in. Once on the main page you'll be able to make posts and comment on other users posts. 
 
 ## Credits
-Ethan Pfeiffer, Jamie Gutierrez, and David Young. 
-Github links : https://github.com/crocket77, https://github.com/xJaimeGx, and https://github.com/DY9040.
+Ethan Pfeiffer
+Github links : https://github.com/crocket77
 
-## Contributions
-This project is using [Contributor Covenant] (https://www.contributor-covenant.org/) Please read over their guidelines before contributing.
 
-## Testing Instructions
-Follow instructions on how to run the code, from there try posting things.
-
-## Questions
-You can contact us via our  [Github Profile](https://github.com/https://github.com/DY9040/Aniverse)
-or by email Aniverse123@outlook.com if you have any questions.
