@@ -4,36 +4,15 @@ async function signupFormHandler(event) {
     const username = document.querySelector('#username-signup').value.trim();
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
-    const persona = document.querySelector('#persona-signup').value;
 
-    console.log(persona)
-   
-    if(persona==="Allmight"){
-      filename="allmight.png"
-    }
-    else if(persona==="One Punch"){
-      filename="one_punch.png"
-    }
-    else if(persona==="Sailor Moon"){
-      filename="SailorMoon.png"
-    }
-    else if(persona==="Goku"){
-      filename="goku.png"
-    }else if(persona==="Deku"){
-      filename="deku.png"
-    }else{
-      filename="shoto.png"
-    }
-    console.log(filename)
   
-    if (username && email && password&&persona&&filename) {
+    if (username && email && password) {
       const response = await fetch('/api/users', {
         method: 'post',
         body: JSON.stringify({
           username,
           email,
           password,
-          persona,
           filename
         }),
         headers: { 'Content-Type': 'application/json' }
